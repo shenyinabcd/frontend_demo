@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>圣杯布局/双飞翼布局</title>
+        <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            #parents {
+                width: 1000px;
+                border: 2px solid;
+                margin: 0 auto;
+            }
+            #top {
+                background: #666; 
+                height: 50px;
+            }
+            #main {
+                padding-left: 100px;
+                padding-right: 150px;
+                position: relative;
+                overflow:hidden;
+            }
+            #left, #content, #right {
+                margin-bottom: -2000px;
+                padding-bottom: 2000px;
+            }
+            #left {
+                background: #E79F6D;
+                float: left;
+                width: 100px;
+                position: relative;
+                margin-left: -100px;
+            }
+            #content {
+                background: #D6D6D6;
+                float: left;
+                width: 100%;
+                position: relative;
+            }
+            #right {
+                background: #77BBDD;
+                width: 150px;
+                position: absolute;
+                right: 0px;
+            }
+            #foot {
+                background: #666;
+                clear: both;
+                height: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="parents">
+           <div id="top">这是Top!</div>
+           <div id="main">
+               <div id="left">这是Left!</div>
+               <div id="content">
+                <p>
+                这是Content!<br><br><br><br>这是多行高度！<br>
+                </p>
+                </div>
+               <div id="right">这是Right!</div>
+             </div>
+           <div id="foot">这是Foot!</div>
+        </div>
+    </body>
+</html>
