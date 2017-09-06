@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="utf-8">
+  <style type="text/css">
+    .stroke {
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: red;
+    }
+  </style>
+</head>
+<body>
+  <p id="foo" class="stroke">
+    旦自黄河去，暮至黑山头
+  </p>
+  <script type="text/javascript">
+    document.addEventListener('load', function() {
+      console.log("loaded");
+    });
+    window.onload = function() {
+      console.log('document loaded');
+    }
+  </script>
+</body>
+</html>
